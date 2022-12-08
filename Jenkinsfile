@@ -6,7 +6,7 @@ pipeline{
         stages{
             stage('Clone Repo'){
                 steps{
-                    git branch: 'main', url: 'https://gitlab.com/qacdevops/chaperootodo_client'
+                    git branch: 'master', url: 'https://gitlab.com/qacdevops/chaperootodo_client'
                 }
             }
             stage('Install Docker and Docker-Compose'){
